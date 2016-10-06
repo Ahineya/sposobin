@@ -24,9 +24,24 @@
 		h4.cjk { font-family: "Arial"; font-weight: normal }
 		h4.ctl { font-family: "Arial"; font-weight: normal }
 		a:link { so-language: zxx }
-		body {
+		.content {
 			width: 700px;
 		    margin: 50px auto;
+		}
+		.content-container {
+			position: absolute;
+    		left: 320px;
+		}
+		.sidebar {
+			position: fixed;
+		    left: 0;
+		    width: 300px;
+		    background-color: white;
+		    border: 1px solid gray;
+		    top: 0;
+		    bottom: 0;
+		    overflow: auto;
+		    z-index: 1;
 		}
 	-->
 	</style>
@@ -39,33 +54,10 @@
    })();
 </script>
 <script type="text/javascript" src="orphus/orphus.js"></script>
-<a href="//orphus.ru" id="orphus" target="_blank"><img alt="Система Orphus" src="orphus/orphus.gif" border="0" width="125" height="115" /></a>
-<script type="text/javascript" src="js/scripts.js"></script>
-<p style="margin-bottom: 0in">И. В. СПОСОБИН</p>
-<p style="margin-bottom: 0in"><br />
-</p>
-<p style="margin-bottom: 0in">ЭЛЕМЕНТАРНАЯ ТЕОРИЯ
-МУЗЫКИ</p>
-<p style="margin-bottom: 0in"><br />
-</p>
-<p style="margin-bottom: 0in">Допущено Отделом учебных
-заведений</p>
-<p style="margin-bottom: 0in">министерства культуры
-СССР</p>
-<p style="margin-bottom: 0in">в качестве учебника</p>
-<p style="margin-bottom: 0in">для музыкальных училищ</p>
-<p style="margin-bottom: 0in"><br />
-</p>
-<p style="margin-bottom: 0in">ГОСУДАРСТВЕННОЕ
-МУЗЫКАЛЬНОЕ ИЗДАТЕЛЬСТВО</p>
-<p style="margin-bottom: 0in">Москва 1963</p>
-<p style="margin-bottom: 0in"><br />
-</p>
-<p style="margin-bottom: 0in"><br />
-</p>
-<p style="margin-bottom: 0in; page-break-before: always"><br />
-</p>
-<h1 CLASS="western" align="center"><a NAME="_vu3d12s0sb3g"></a>Оглавление</H1>
+
+<div class="container">
+<div class="sidebar">
+	<h1 CLASS="western" align="center"><a NAME="_vu3d12s0sb3g"></a>Оглавление</H1>
 <p style="margin-bottom: 0in"><br />
 </p>
 <p style="margin-bottom: 0in"><a HREF="#_5pihvu2tjnea"><FONT COLOR="#1155cc"><U>Введение</U></FONT></a></p>
@@ -119,14 +111,35 @@ I. Знаки сокращения нотного письма</U></FONT></a></p
 <p style="margin-bottom: 0in">Указатель к сборнику
 задач и упражнений по элементарной
 теории В.В.Хвостенко (отсутствует)</p>
+</div>
+
+<div class="content-container">
+<div class="content">
+<a href="//orphus.ru" id="orphus" target="_blank"><img alt="Система Orphus" src="orphus/orphus.gif" border="0" width="125" height="115" /></a>
+
+<p style="margin-bottom: 0in">И. В. СПОСОБИН</p>
+<p style="margin-bottom: 0in"><br />
+</p>
+<p style="margin-bottom: 0in">ЭЛЕМЕНТАРНАЯ ТЕОРИЯ
+МУЗЫКИ</p>
+<p style="margin-bottom: 0in"><br />
+</p>
+<p style="margin-bottom: 0in">Допущено Отделом учебных
+заведений</p>
+<p style="margin-bottom: 0in">министерства культуры
+СССР</p>
+<p style="margin-bottom: 0in">в качестве учебника</p>
+<p style="margin-bottom: 0in">для музыкальных училищ</p>
+<p style="margin-bottom: 0in"><br />
+</p>
+<p style="margin-bottom: 0in">ГОСУДАРСТВЕННОЕ
+МУЗЫКАЛЬНОЕ ИЗДАТЕЛЬСТВО</p>
+<p style="margin-bottom: 0in">Москва 1963</p>
 <p style="margin-bottom: 0in"><br />
 </p>
 <p style="margin-bottom: 0in"><br />
 </p>
-<p style="margin-bottom: 0in"><br />
-</p>
-<p style="margin-bottom: 0in"><br />
-</p>
+
 <p style="margin-bottom: 0in; page-break-before: always"><br />
 </p>
 <h1 CLASS="western" align="center"><a NAME="_5pihvu2tjnea"></a>Введение</H1>
@@ -10558,5 +10571,8 @@ Capo al Fine</I> (да капо аль фине, т. е. с начала
 <p style="margin-bottom: 0in"><br />
 </p>
 <p align="center" style="margin-bottom: 0in"><img src="images/i_8d5e81222defa5ea_html_46590c5.png" NAME="image149.png" ALIGN=BOTTOM HSPACE=12 VSPACE=12 WIDTH=602 HEIGHT=235 BORDER=0></p>
+</div>
+</div>
+</div>
 </body>
 </html>
