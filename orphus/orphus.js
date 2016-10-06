@@ -67,7 +67,7 @@ h.type="hidden";
 h.name=k;
 h.value=_26[k];
 f.appendChild(h);}_1b(f);
-f.submit();
+console.log(f);
 f.parentNode.removeChild(f);};
 var _29=function(){var _2a=0,_2b=0;
 if(typeof (w.innerWidth)=="number"){_2a=w.innerWidth;
