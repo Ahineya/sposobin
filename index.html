@@ -24,6 +24,7 @@
 		h4.cjk { font-family: "Arial"; font-weight: normal }
 		h4.ctl { font-family: "Arial"; font-weight: normal }
 		a:link { so-language: zxx }
+
 		.content {
 			width: 700px;
 		    margin: 50px auto;
@@ -45,6 +46,38 @@
 		    overflow: auto;
 		    z-index: 1;
 		}
+
+		.lightbox {
+			width: 80%;
+		    height: 50%;
+		    position: fixed;
+		    top: 25%;
+		    left: 10%;
+		    z-index: 2;
+		    background: white;
+		    border: 1px solid gray;
+		    border-radius: 3px;
+		    overflow: auto;
+		}
+
+		img {
+			cursor: pointer;
+			border: 2px solid white;
+		}
+
+		img:hover {
+			border: 2px solid gray;
+		}
+
+		.lightbox > img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.lightbox > img:hover {
+			border: 2px solid white;
+		}
+
 	-->
 	</style>
 </head>
@@ -56,6 +89,8 @@
    })();
 </script>
 <script type="text/javascript" src="orphus/orphus.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
 
 <div class="container">
 <div class="sidebar">
