@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	$("img").on("click", function(e) {
 
+		$(".overlay").show();
+
 		e.stopPropagation();
 
 		const imgClone = $(this).clone();
@@ -20,17 +22,15 @@ $(document).ready(function() {
 		var div = $("<div>").addClass("lightbox").append(imgClone);
 		$("body").append(div);
 
-		$("body").on("click", function() {
-			div.remove();
-			$("body").off("click");
-			$("body").off("keypress");
-		});
+		$("body").on("click", clean.bind(null, div));
+		$("body").on("keypress", clean.bind(null, div));
 
-		$("body").on("keypress", function() {
+		function clean(div) {
 			div.remove();
 			$("body").off("click");
 			$("body").off("keypress");
-		});
+			$(".overlay").hide();
+		}
 
 	});
 });
