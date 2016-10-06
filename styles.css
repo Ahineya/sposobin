@@ -1,0 +1,72 @@
+.content {
+			width: 700px;
+		    margin: 50px auto;
+		    padding-right: 20px;
+		}
+		.content-container {
+			position: absolute;
+    		left: 320px;
+    		right: 10px;
+		}
+		.sidebar {
+			position: fixed;
+		    left: 0;
+		    width: 300px;
+		    background-color: white;
+		    border: 1px solid gray;
+		    top: 0;
+		    bottom: 0;
+		    overflow: auto;
+		    z-index: 1;
+		}
+
+		.lightbox {
+			width: 80%;
+		    height: 50%;
+		    position: fixed;
+		    top: 25%;
+		    left: 10%;
+		    z-index: 1000;
+		    background: white;
+		    border: 1px solid gray;
+		    border-radius: 3px;
+		    overflow: auto;
+		}
+
+		img:not(.icon) {
+			cursor: pointer;
+			border: 2px solid white;
+		}
+
+		img:not(.orphus):hover {
+			border: 2px solid red;
+		}
+
+		#orphus {
+			display: block;
+		}
+
+		.orphus {
+			margin: 10px auto;
+    		display: block;
+		}
+
+		.lightbox > img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.lightbox > img:hover {
+			border: 2px solid white;
+		}
+
+		.overlay {
+			position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 16;
+			background-color: rgba(0,0,0,0.7);
+			display: none;
+		}
