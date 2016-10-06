@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("img").on("click", function(e) {
+	$("img:not(.orphus)").on("click", function(e) {
 
 		$(".overlay").show();
 
