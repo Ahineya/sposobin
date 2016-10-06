@@ -67,7 +67,24 @@ h.type="hidden";
 h.name=k;
 h.value=_26[k];
 f.appendChild(h);}_1b(f);
-console.log(f);
+
+
+
+// CUSTOM
+
+var message = f.c_pre.value + "[[" + f.c_sel.value + "]]" + f.c_suf.value + "; " + "Comment: " + f.comment.value;
+
+emailjs.send("default_service","orfus",{name: "Sposobin", notes: message})
+.then(function(response) {
+   console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+}, function(err) {
+   console.log("FAILED. error=", err);
+});
+
+// --
+
+
+
 f.parentNode.removeChild(f);};
 var _29=function(){var _2a=0,_2b=0;
 if(typeof (w.innerWidth)=="number"){_2a=w.innerWidth;
